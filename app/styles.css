@@ -1,0 +1,65 @@
+:root {
+  background-image: url("../public/background.png");
+
+  /* Ensure the image covers the entire background */
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  /* Align the image in the center (this helps with cropping if needed) */
+  background-position: center center;
+
+  /* Fix the background to the viewport */
+  background-attachment: fixed;
+}
+
+header > h1,
+h2 {
+  text-align: center;
+  color: #3f2ca2;
+}
+
+article {
+  position: absolute;
+  left: 37%;
+  top: 25%;
+  width: 500px;
+  background-color: #9fe6f2;
+  color: black;
+  border: solid #433097 2px;
+  box-shadow: 3px 3px #00000080;
+  padding: 4px;
+}
+
+article > div {
+  padding: 4px;
+  border: solid #433097 2px;
+  margin-bottom: 4px;
+}
+
+.heading {
+  display: flex;
+  background-color: #f5cdee;
+  height: 25px;
+  width: auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.heading > p {
+  margin: 0;
+}
+
+.content {
+  background-color: #fdfdfc;
+  color: #363488;
+}
+
+.heading > button {
+  width: 20px;
+  height: 20px;
+}
+
+aside > p {
+  color: #3f2ca2;
+}
