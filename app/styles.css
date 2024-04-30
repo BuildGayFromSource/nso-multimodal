@@ -1,16 +1,21 @@
+@font-face {
+  font-family: "Zpix";
+  src: url("../public/fonts/zpix.ttf") format("truetype");
+}
+
 :root {
-  background-image: url("../public/background.png");
+  background-image: url("../public/backgrounds/tile.png");
 
   /* Ensure the image covers the entire background */
-  background-size: cover;
-
-  background-repeat: no-repeat;
-
-  /* Align the image in the center (this helps with cropping if needed) */
-  background-position: center center;
+  background-size: auto;
+  background-repeat: repeat;
 
   /* Fix the background to the viewport */
   background-attachment: fixed;
+}
+
+body {
+  font-family: "Zpix", sans-serif;
 }
 
 header > h1,
@@ -19,8 +24,12 @@ h2 {
   color: #3f2ca2;
 }
 
+aside {
+  margin-left: 275px;
+}
+
 article {
-  position: absolute;
+  position: fixed;
   left: 37%;
   top: 25%;
   width: 500px;
@@ -29,6 +38,7 @@ article {
   border: solid #433097 2px;
   box-shadow: 3px 3px #00000080;
   padding: 4px;
+  z-index: 2;
 }
 
 article > div {
@@ -62,4 +72,34 @@ article > div {
 
 aside > p {
   color: #3f2ca2;
+}
+
+.sidebar {
+  background-image: url("../public/backgrounds/day.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  position: fixed;
+  height: 100vh;
+  width: 242px;
+  top: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 750px) {
+  .sidebar {
+    display: none;
+  }
+
+  aside {
+    margin-left: 5px;
+  }
 }

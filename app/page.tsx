@@ -25,37 +25,6 @@ export default function Page() {
     setOpenWindows(newOpenWindows);
   };
 
-  const [sidebarMargin, setSidebarMargin] = useState("0px");
-
-  const updateMargin = () => {
-    const backgroundAspectRatio = 1919 / 1051; // Original aspect ratio of the background image
-    const sidebarProportion = 242 / 1919; // Proportion of the sidebar width to the total image width
-    const currentAspectRatio = window.innerWidth / window.innerHeight;
-
-    let newMargin;
-
-    if (currentAspectRatio > backgroundAspectRatio) {
-      // Calculate the current proportional width of the sidebar
-      newMargin = `${window.innerWidth * sidebarProportion}px`;
-    } else {
-      // Sidebar is fully or partially off-screen
-      newMargin = "0px";
-    }
-
-    setSidebarMargin(newMargin);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", updateMargin);
-
-    // Initial update
-    updateMargin();
-
-    return () => {
-      window.removeEventListener("resize", updateMargin);
-    };
-  }, []);
-
   return (
     <>
       <header>
@@ -65,7 +34,7 @@ export default function Page() {
       <section>
         {content.map(({ icon, subtitle, title, text }) => (
           <>
-            <aside style={{ marginLeft: sidebarMargin }}>
+            <aside>
               <img src={icon} onClick={() => handleIconClick(icon)} />
               <p>{subtitle}</p>
             </aside>
@@ -79,6 +48,8 @@ export default function Page() {
           </>
         ))}
       </section>
+      <div className="sidebar left" ></div>
+      <div className="sidebar right"></div>
     </>
   );
 }

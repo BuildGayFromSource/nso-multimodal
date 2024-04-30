@@ -1,6 +1,6 @@
 export const content = [
   {
-    icon: "text.png",
+    icon: "../icons/text.png",
     subtitle: "Introduction",
     title: "Introduction",
     text: `
@@ -13,12 +13,12 @@ export const content = [
   `,
   },
   {
-    icon: "game.png",
+    icon: "../icons/game.png",
     subtitle: "Interactivity",
     title: "Beginnings",
     text: `
     <p>
-    When people think of video games, they typically think of more obviously interactive experiences like Mario, Call of Duty, or similar. This makes Needy Streamer Overload stand out, because visual novels are typically associated with linearity rather than full interactivity. This assumption is broken upon first beginning the game, as you are greeted with a user interface that looks incredibly like Windows.
+    When people think of video games, they typically think of more obviously interactive experiences like Mario, Call of Duty, or similar. This makes Needy Streamer Overload stand out, because visual novels are typically associated with linearity rather than full interactivity. This assumption is broken upon beginning the game, as you are greeted with a user interface that looks incredibly like Windows.
     </p>
     <p>
     You hear a direct message ping from someone, asking you to log into their streaming account. This assistance (and thus, interactivity) forms the crux of Needy Streamer Overload - you are both an assistant and partner to the protagonist Ame and her streaming persona OMGKawaiiAngel (or KAngel for short).
@@ -26,7 +26,7 @@ export const content = [
   `,
   },
   {
-    icon: "youtube.png",
+    icon: "../icons/youtube.png",
     subtitle: "Numbers",
     title: "Recollection",
     text: `
@@ -39,7 +39,7 @@ export const content = [
   `,
   },
   {
-    icon: "odekake.png",
+    icon: "../icons/odekake.png",
     subtitle: "Variability",
     title: "Choose your own Adventure",
     text: `
@@ -55,7 +55,7 @@ export const content = [
   `,
   },
   {
-    icon: "asobu.png",
+    icon: "../icons/asobu.png",
     subtitle: "Transcoding",
     title: "What's this about Culture?",
     text: `
@@ -63,7 +63,7 @@ export const content = [
     However, an integral part of this experience is the cultural transcoding of streaming (and Virtual Youtubing) culture to these players. While they are likely to have the literacies necessary to read and interact with NSO, how does the game immerse players in the life of a streamer?
     </p>
     <p>
-    As stated before, multiple activities replicate a real-world activity – Tweeter is X (formerly Twitter) and /st/ is based off of the 4channel board /vt/ (Virtual Youtubers), down to even the specific behaviors of imageboard users. Streaming and virtual streaming is tied to a certain balance of authenticity and distance from their viewers to avoid the creation of parasocial relationships. This problem is quickly exacerbated if the streamer is female, as a 90 percent of livestream viewers are male (Sjöblom), and female streamers and content creators who “self-sexualize” (Tran). This problem asserts itself in NSO both in Ame’s streams and her interactions in social media (Figure C).
+    As stated before, multiple activities replicate a real-world activity – Tweeter is X (formerly Twitter) and /st/ is based off the 4channel board /vt/ (Virtual Youtubers), down to even the specific behaviors of imageboard users. Streaming and virtual streaming is tied to a certain balance of authenticity and distance from their viewers to avoid the creation of parasocial relationships. This problem is quickly exacerbated if the streamer is female, as 90 percent of livestream viewers are male (Sjöblom), and female streamers and content creators who “self-sexualize” (Tran). This problem asserts itself in NSO both in Ame’s streams and her interactions in social media (Figure C).
     </p>
     <p>
     In fact, during streams, you function as a moderator for her. You can select certain chat messages for her to interact with and delete hostile or trolling messages – doing so slightly improves her anxiety. However, the improvement is intentionally minimal compared to the stress that streaming intrinsically brings.
@@ -74,7 +74,7 @@ export const content = [
   `,
   },
   {
-    icon: "neru.png",
+    icon: "../icons/neru.png",
     subtitle: "Conclusion",
     title: "Conclusion + Works Cited",
     text: `
