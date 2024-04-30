@@ -32,7 +32,7 @@ export default function Page() {
         <h2>By Bea Duncan</h2>
       </header>
       <section>
-        {content.map(({ icon, subtitle, title, text }) => (
+        {content.map(({ icon, subtitle, title, figure, text }) => (
           <>
             <aside>
               <img src={icon} onClick={() => handleIconClick(icon)} />
@@ -42,13 +42,14 @@ export default function Page() {
               <NewWindow
                 title={title}
                 text={text}
+                figure={figure}
                 close={() => closeWindow(icon)}
               />
             )}
           </>
         ))}
       </section>
-      <div className="sidebar left" ></div>
+      <div className="sidebar left"></div>
       <div className="sidebar right"></div>
     </>
   );

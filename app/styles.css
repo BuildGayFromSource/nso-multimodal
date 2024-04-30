@@ -47,6 +47,10 @@ article > div {
   margin-bottom: 4px;
 }
 
+article > img {
+  object-fit: contain;
+}
+
 .heading {
   display: flex;
   background-color: #f5cdee;
