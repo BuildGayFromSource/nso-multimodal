@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const content = [
   {
     icon: "../icons/text.png",
@@ -30,6 +32,7 @@ export const content = [
     You hear a direct message ping from someone, asking you to log into their streaming account (Figure A). 
     This assistance (and thus, interactivity) forms the crux of Needy Streamer Overload - 
     you are both an assistant and partner to the protagonist Ame and her streaming persona OMGKawaiiAngel (or KAngel for short).
+    Upon doing so, you are whisked into KAngel's first stream - and thus her (and your) foray into the world of streaming. 
     </p>
   `,
   },
@@ -40,18 +43,41 @@ export const content = [
     figure: "../figures/FigureB.png",
     text: `
     <p>
-    After the prologue day, the operating system fully opens to the user, showing a variety of activities to do with Ame, 
-    and additionally making the player aware of four different statistics: Follower Count, Stress, Affection, and Mental Darkness. (Figure B, Mental Darkness not pictured.) 
+    After the initial stream, the game and operating system fully open up to the user, offering a variety of activities to do with Ame, 
+    and additionally give the player of four different statistics to monitor: Follower Count, Stress, Affection, and Mental Darkness. (Figure B, Mental Darkness not pictured.) 
     Manipulating these stats through different activities affects her mood, responses, and can lead her and the player into different endings to her story.
     </p>
     <p>
     The first day sets a baseline of both game knowledge and cultural knowledge for the player. 
     The intention of the game is to show the player how and why being an influencer or streamer is not always rosy. 
-    Taking Ame to a shrink or Shibuya will raise her affection towards the player and lower her darkness, but it takes two out of three time slots... 
-    slots you could have used to generate new streaming ideas or even the act of streaming itself! You could choose a different activity to avoid that, 
+    Taking Ame to a shrink or Shibuya will raise her affection towards the player and lower her mental darkness, but it takes two out of three time slots available to you each day - 
+    slots you could have used to generate new streaming ideas. This presents a time problem: Ame will only ever stream at night (as that is where all of her viewerbase is awake), meaning that if
+     you take her to Shibuya in the evening, you will miss out on a day of streaming. 
+    </p>
+    <p>
+    You could choose a different activity to avoid that, 
     such as browsing /st/ or name-searching herself on Tweeter, but those tend to raise her anxiety and darkness in turn.
     </p>
   `,
+  },
+  {
+    icon: "../icons/egosearch.png",
+    subtitle: "Streaming",
+    title: "To stream or not to Stream",
+    text: `
+    <p>
+    You may ask why streaming only at night matters. Ame, for her part, intentionally chooses the night time to further her goal of amassing as many followers as possible.
+    This corralates with not only regular streamers and Virtual Youtubers, but also with another oft-forgotton profession: webcam modeling. Both professions attempt to 
+    bridge a gap between an intimate relationship and a necessarily parasocial one. They keep to schedules and treat their profession as a business, alongside with standing out from the 
+    competition with variety streams or having a unique profile (Ruberg 1028).
+    </p>
+    <p>
+    Additionally, while KAngel puts a front on with her persona, her goals are chiefly about money. While this lines up with webcam models, it is strikingly different from the way 
+    the typical (male) streamer interfaces with the monetary aspects of their profession. While they *also* chiefly desire to gain returns on their effort (either through social 
+    clout or money), most streamers shy away from the topic even in the videos they create as guides to the profession. This is especially pertinent due to these streamers attempting 
+    to posture themselves as doing it for fun. Nevertheless, the topic of fame drives many streamers to continue into the profession, much like Ame does.
+    </p>
+    `
   },
   {
     icon: "../icons/odekake.png",
@@ -142,13 +168,16 @@ export const content = [
     Gillern, S. von. (2016). The Gamer Response and Decision Framework: A Tool for Understanding Video Gameplay Experiences. Simulation & Gaming, 47(5), 666-683. https://doi.org/10.1177/1046878116656644
     </p>
     <p>
-    von Gillern, S., and Stufft, C. (2023) Multimodality, learning and decision-making: children's metacognitive reflections on their engagement with video games as interactive texts. Literacy, 57: 3–16. https://doi.org/10.1111/lit.12304
+    Ruberg, Bo. “Live Play, Live Sex: The Parallel Labors of Video Game Live Streaming and Webcam Modeling.” Sexualities, vol. 25, no. 8, Dec. 2022, pp. 1021–39. EBSCOhost, https://doi.org/10.1177/13634607221103204.
     </p>
     <p>
     Sjöblom, Max, and Juho Hamari. “Why Do People Watch Others Play Video Games? An Empirical Study on the Motivations of Twitch Users.” Computers in Human Behavior, vol. 75, Oct. 2017, pp. 985–96. EBSCOhost, https://doi.org/10.1016/j.chb.2016.10.019.
     </p>
     <p>
     Tran, Christine H. “‘Never Battle Alone’: Egirls and the Gender(ed) War on Video Game Live Streaming as ‘Real’ Work.” Television & New Media, vol. 23, no. 5, July 2022, pp. 509–20. EBSCOhost, https://doi.org/10.1177/15274764221080930.
+    </p>
+    <p>
+    von Gillern, S., and Stufft, C. (2023) Multimodality, learning and decision-making: children's metacognitive reflections on their engagement with video games as interactive texts. Literacy, 57: 3–16. https://doi.org/10.1111/lit.12304
     </p>
     <p>
     “Desktop Operating System Market Share 2013-2023.” Statista, 4 Sept. 2023, www.statista.com/statistics/218089/global-market-share-of-windows-7/.

@@ -16,6 +16,8 @@
 
 body {
   font-family: "Zpix", sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header > h1,
@@ -24,8 +26,15 @@ h2 {
   color: #3f2ca2;
 }
 
-aside {
+section {
   margin-left: 275px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: calc(100% - 96px);
+  width: 250px;
+
 }
 
 article {
@@ -76,6 +85,7 @@ article > img {
 
 aside > p {
   color: #3f2ca2;
+  margin-top: 10px;
 }
 
 .sidebar {
